@@ -14,7 +14,7 @@ const App = () => {
   const msg=query.q?query.q:"Current Location"
  
   const getWeather =async  () => {
-    const url="https://weather-app-backend-6yyb.onrender.com/api/api"
+    const url="https://weather-app-backend-6yyb.onrender.com/api"
     toast.info(`Fetching Data for ${msg}`);
     await fetch(url,{
       method:"POST",
