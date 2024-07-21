@@ -55,7 +55,7 @@ const App = () => {
          
           <TempAndDetails weather={weather} units={units}/>
           <Forecast title='3 Hour Forecast' data={weather.hourly} units={units} />
-          <Forecast title='Daily Forecast' data={weather.daily} />
+          <Forecast title='Daily Forecast' data={weather.daily} units={units} />
         </>
       )}
       <ToastContainer autoClose={2500} hideProgressBar={true} theme="colored" />
